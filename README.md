@@ -1,2 +1,5 @@
-# namuwiki-opennamu-conv
-Convert namuwiki database json file for opennamu
+# 나무위키-오픈나무 데이터 컨버터
+나무위키가 배포하는 JSON파일을 오픈나무에 맞게 컨버팅하는 스크립트입니다.
+
+
+>현재 파일 생성과 오픈나무 쪽 구조의 문제로 인해서 정상적으로 동작하지 않습니다. 사용하지 말아주세요.
