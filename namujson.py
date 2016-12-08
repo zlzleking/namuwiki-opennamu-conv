@@ -34,7 +34,7 @@ def mainprocess(dictdata):
 	Errorlist = []
 
 	# 이하의 코드는 문서별로 실행됩니다.
-	for i in range(5):
+	for i in range(len(dictdata)):
 		try:
 			# 데이터를 읽어서 본문, 문서 제목, 리비전 수를 셉니다. 또한 문서 제목을 사전에 인코딩합니다.
 			text = dictdata[i]['text']
