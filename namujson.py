@@ -8,7 +8,7 @@ import pymysql
 json_data = open('set.json').read()
 data = json.loads(json_data)
 
-conn = pymysql.connect(host = data['host'], user = data['user'], password = data['pw'], db = data['db'], charset = 'utf8')
+conn = pymysql.connect(host = data['host'], user = data['user'], password = data['pw'], db = data['db'], charset = 'utf8mb4')
 curs = conn.cursor(pymysql.cursors.DictCursor)
 
 # 숫자 판단
@@ -50,7 +50,6 @@ def mainprocess(dictdata):
                     title = '틀:' + str(dictdata[i]['title'])
                 else:
                     title = str(dictdata[i]['title'])
-                print(title)
                 # SQL에 삽입 합니다.
                 try:
                     curs.execute("insert into data (title, data, acl) value ('" + pymysql.escape_string(title) + "', '" + pymysql.escape_string(text) + "', '')")
