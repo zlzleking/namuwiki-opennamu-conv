@@ -1,6 +1,7 @@
 {
-	"db" : "data",
-	"host" : "localhost",
-	"user" : "root",
-	"pw" : "test",
+    "type": "sqlite",
+    "db": "data",
+    "host": "localhost",
+    "user": "root",
+    "pw": "test"
 }
